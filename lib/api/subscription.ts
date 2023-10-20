@@ -1,4 +1,4 @@
-import { TvDetail } from './library'
+import { TvDetail } from './tv'
 
 export type SubscriptionDetail = {
   id: number

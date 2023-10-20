@@ -10,3 +10,8 @@ export type TvDetail = {
   poster_path: string
   backdrop_path: string
 }
+
+export async function listAllTvs(): Promise<TvDetail[]> {
+  const resp = await fetch('/api/tvs')
+  return await resp.json()
+}
